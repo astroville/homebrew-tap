@@ -13,26 +13,26 @@
 class StarDns < Formula
   desc "Lightweight clustered DNS server for local engineering environments"
   homepage "https://github.com/astroville/star-dns"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.2/star-dns_0.1.2_darwin_arm64.tar.gz"
-      sha256 "eafeb81b06aa3952d1efdd3313fd72df0316ae82137fb81ff5021ab761f3956c"
+      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.3/star-dns_0.1.3_darwin_arm64.tar.gz"
+      sha256 "97b607b7bb4fbaa5f1caed67c3da75f53fde22c1719737a30cc40e633aa23fd1"
     else
-      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.2/star-dns_0.1.2_darwin_amd64.tar.gz"
-      sha256 "e3549cc223c4016f53e54a717a1df90d23d06d492017d265a7072ac5bb863151"
+      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.3/star-dns_0.1.3_darwin_amd64.tar.gz"
+      sha256 "f579df24674f68e2dcaef81d3cff03c1c4ef10363452cdab4f8ca739206eede2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.2/star-dns_0.1.2_linux_arm64.tar.gz"
-      sha256 "78e6c7a433def466c199b96633d547b546f89f8bd5f491b4e2e829d096d7e288"
+      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.3/star-dns_0.1.3_linux_arm64.tar.gz"
+      sha256 "55b35c45727858a4c0aa62f1ba31f7e5a1f3cf7d7736d2f7c30efe9748c3fac6"
     else
-      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.2/star-dns_0.1.2_linux_amd64.tar.gz"
-      sha256 "be417690adbf41ca91e242d890b2a748a1d06bdff279e827d4038c2953262c82"
+      url "https://github.com/astroville/star-dns-releases/releases/download/v0.1.3/star-dns_0.1.3_linux_amd64.tar.gz"
+      sha256 "bd08c69665733d3edfc3f26f3d69c9b82fca16ba860aefb6e8063bc8ac2ea49e"
     end
   end
 
