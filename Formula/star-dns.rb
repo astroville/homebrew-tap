@@ -38,7 +38,9 @@ class StarDns < Formula
 
   def install
     bin.install "star-dns"
-    etc.install "config.yaml" => "star-dns/config.yaml" unless File.exist?(etc/"star-dns/config.yaml")
+    # (etc/"star-dns").install creates the target dir; a bare etc.install rename
+    # into a non-existent subdir fails with ENOENT.
+    (etc/"star-dns").install "config.yaml" unless (etc/"star-dns/config.yaml").exist?
   end
 
   def caveats
